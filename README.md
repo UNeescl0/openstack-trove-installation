@@ -15,6 +15,15 @@ This guide is for **beginners**.
 
 ---
 
+
+---
+
+## ✅ EXEMPLE FINAL (COPIE EXACTEMENT)
+
+⚠️ **TRÈS IMPORTANT : tu dois copier AUSSI les ```**
+
+```markdown
+```bash
 # ================================
 # STEP 1: Load OpenStack credentials
 # ================================
@@ -61,4 +70,3 @@ sudo systemctl enable trove-conductor
 # ================================
 sudo systemctl status trove-api
 openstack database service list
-
