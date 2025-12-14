@@ -13,7 +13,6 @@ This guide is for **beginners**.
 - Python 3
 - OpenStack client installed
 
-```bash
 # ==============================
 # STEP 1: Load OpenStack credentials
 # ==============================
