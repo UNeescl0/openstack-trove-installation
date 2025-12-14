@@ -59,4 +59,3 @@ sudo systemctl enable trove-conductor
 # ==============================
 sudo systemctl status trove-api
 openstack database service list
-
