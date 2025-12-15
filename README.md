@@ -14,17 +14,17 @@ This guide is for **beginners**.
 - OpenStack client installed
 
 
-# STEP 1: Load OpenStack credentials
+
+# STEP 1: Update system
+
+```bash
+sudo apt update && sudo apt upgrade -y
+```
+# STEP 2: Load OpenStack credentials
 
 ```bash
 source admin-openrc.sh
 openstack token issue
-```
-
-# STEP 2: Update system
-
-```bash
-sudo apt update && sudo apt upgrade -y
 ```
 moodify globals.yml
 ```bash
