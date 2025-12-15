@@ -30,7 +30,8 @@ sudo apt update && sudo apt upgrade -y
 # STEP 3: Install Trove packages
 
 ```bash
-sudo apt install -y trove-api trove-taskmanager trove-conductor python3-troveclient
+pip install python-troveclient
+
 ```
 
 # STEP 4: Configure Trove
