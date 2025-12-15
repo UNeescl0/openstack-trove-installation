@@ -76,5 +76,18 @@ sudo systemctl enable trove-taskmanager
 sudo systemctl enable trove-conductor
 ```
 
+# create a datastore : 
+```
+openstack datastore version create 8.0.0 mysql mysql 9b1f6fbe-42b7-4dc3-ba83-49ebb6f5c31b --active --default --version-number 8.0.0
+```
 
+# create a database  
+```bash
+openstack database instance create \
+  --datastore mysql \
+  --datastore-version 8.0.0 \
+  --flavor m1.tiny \
+  --size 5 \
+  mydb-instance
+```
 
