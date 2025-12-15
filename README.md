@@ -58,16 +58,12 @@ EOF
 ```bash
 kolla-ansible deploy -i /home/user/openstack/all-in-one --passwords /home/user/openstack/passwords.yml
 ```
-# verify 
+## STEP 7: Verify
 ```bash
 sudo docker ps | grep trove
 ```
 
-# STEP 5: Synchronize Trove database
 
-```bash
-sudo trove-manage db_sync
-```
 
 # STEP 6: Start and enable Trove services
 
@@ -80,11 +76,5 @@ sudo systemctl enable trove-taskmanager
 sudo systemctl enable trove-conductor
 ```
 
-# STEP 7: Verify Trove installation
-
-```bash
-bash sudo systemctl status trove-api
-bash openstack database service list
-```
 
 
