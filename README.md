@@ -58,6 +58,10 @@ EOF
 ```bash
 kolla-ansible deploy -i /home/user/openstack/all-in-one --passwords /home/user/openstack/passwords.yml
 ```
+# verify 
+```bash
+sudo docker ps | grep trove
+```
 
 # STEP 5: Synchronize Trove database
 
