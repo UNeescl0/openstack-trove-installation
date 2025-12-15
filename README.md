@@ -23,6 +23,7 @@ sudo apt update && sudo apt upgrade -y
 # STEP 2: Load OpenStack credentials
 
 ```bash
+source /home/user/openstack/bin/activate
 source admin-openrc.sh
 openstack token issue
 ```
