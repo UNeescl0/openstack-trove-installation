@@ -34,17 +34,21 @@ pip install python-troveclient
 
 ```
 
-# STEP 4: Configure Trove
+# STEP 4: créer un passwords.yml
 
 ```bash
-sudo nano /etc/trove/trove.conf
+cat > ~/openstack/passwords.yml <<EOF
+admin_password: "Admin@123456"
+database_password: "DB@123456"
+message_queue_password: "MQ@123456"
+rabbitmq_password: "RMQ@123456"
+EOF
+
+
 ```
-# Configure:
+# lancer ton déploiement:
 ```bash
-# - Database connection
-# - RabbitMQ
-# - Keystone authentication
-# - Neutron networking
+kolla-ansible deploy -i /home/user/openstack/all-in-one --passwords /home/user/openstack/passwords.yml
 ```
 
 # STEP 5: Synchronize Trove database
