@@ -26,7 +26,14 @@ openstack token issue
 ```bash
 sudo apt update && sudo apt upgrade -y
 ```
-
+moodify globals.yml
+```bash
+sudo nano /etc/kolla/globals.yml
+```
+```bash
+enable_trove: "yes"
+enable_haproxy: "yes"
+```
 # STEP 3: Install Trove packages
 
 ```bash
